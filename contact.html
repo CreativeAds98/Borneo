@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Borneo Luxury Stay Vilpatti</title>
+    <link rel="icon" type="image/png" href="assets/favicon.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white">
+        <nav class="fixed top-0 left-0 w-full z-[100] flex items-center justify-between px-6 md:px-16 py-0 text-white transition-all duration-300 bg-transparent">
+        
+        <div class="shrink-0">
+            <div class="w-40 h-40 md:w-64 md:h-64 flex items-center justify-center -my-6 md:-my-10">
+                <a href="/">
+                    <img src="assets/logo-bg.png" 
+                        alt="Borneo Homestay Logo" 
+                        class="w-full h-full object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-500 filter brightness-110">
+                </a>
+            </div>
+        </div>
+
+<ul class="hidden lg:flex items-center gap-4 text-[13px] font-[1000] font-black uppercase tracking-[0.3em]">
+    <li>
+        <a href="index.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="index.html#about" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            About Us
+        </a>
+    </li>
+    <li>
+        <a href="tariff.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Tariff
+        </a>
+    </li>
+    <li>
+        <a href="gallery.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Gallery
+        </a>
+    </li>
+    <li>
+        <a href="contact.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Contact
+        </a>
+    </li>
+</ul>
+
+        <div class="flex items-center gap-4">
+        <a href="https://www.goibibo.com/hotels/borneo-kodaikanal-hotel-in-kodaikanal-2585063791204530941/" class="hidden sm:block bg-red-600 text-white border-2 border-red-600 px-8 py-3 rounded-md hover:bg-white hover:text-red-600 hover:border-white transition-all duration-300 text-[11px] font-[1000] tracking-[0.2em] uppercase shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95 text-center" target="_blank">
+            Book Now
+        </a>
+
+            <button id="menu-toggle" class="lg:hidden p-2 focus:outline-none drop-shadow-md">
+                <svg id="menu-icon" class="w-8 h-8 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-green-950 translate-x-full transition-transform duration-500 ease-in-out lg:hidden">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-end p-8">
+                <button id="menu-close" class="text-white">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <ul class="flex flex-col items-center gap-8 text-green-500 text-xl font-bold uppercase tracking-[0.3em] mt-10">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="index.html#about" class="mobile-link">About Us</a></li>
+                <li><a href="tariff.html" class="mobile-link">Tariff</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+                <li class="mt-4">
+                    <a href="https://www.goibibo.com/hotels/borneo-kodaikanal-hotel-in-kodaikanal-2585063791204530941/" class="bg-white text-green-900 px-10 py-4 rounded-full font-black tracking-widest uppercase shadow-xl">
+                        Book Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<section class="mt-24 md:mt-32 py-24 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+        
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l-4 border-red-600">
+                <h2 class="text-4xl font-black text-gray-900 uppercase tracking-tight mb-6">Plan Your <br><span class="text-green-600">Escape</span></h2>
+                <p class="text-gray-600 leading-relaxed text-lg font-light">
+                    Located at an elevation of **2100m above sea level** in the serene hills of Vilpatti, Borneo Luxury Stay offers an authentic sanctuary experience.
+                </p>
+            </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-gray-50 rounded-md border-t-4 border-green-500 shadow-sm">
+                        <h4 class="font-black text-gray-900 uppercase text-xs tracking-widest mb-3">The Sanctuary</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Vilpatti, Kodaikanal.<br>
+                            Tamil Nadu, India.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-md border-t-4 border-red-600 shadow-sm">
+                        <h4 class="font-black text-gray-900 uppercase text-xs tracking-widest mb-3">Stay Policies</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Check-in: 12 PM<br>
+                            Check-out: 10 AM
+                        </p>
+                    </div>
+                </div>
+
+            <div class="w-full h-80 rounded-md overflow-hidden relative group">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501956.6327649251!2d76.93558121047538!3d10.615389221246978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07673716510fdb%3A0x22724f9e281fb3ba!2sBorneo%20Home%20Stay!5e0!3m2!1sen!2sin!4v1771840305817!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            </div>
+
+            <div class="relative">
+                <div class="bg-white p-10 md:p-16 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] rounded-md border border-gray-100 relative z-10">
+                    <form action="#" class="space-y-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Guest Name</label>
+                            <input type="text" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="Full Name">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Mobile Number</label>
+                                <input type="tel" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="+91">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Room Type</label>
+                                <select class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none appearance-none transition-all font-bold text-gray-800">
+                                    <option>Honeymoon Suite (₹5,000)</option>
+                                    <option>Triple Room - 6 Pax (₹7,000)</option>
+                                    <option>Deluxe Room (₹2,000)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Requirements</label>
+                            <textarea rows="4" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="Number of guests, special requests..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-red-600 text-white py-6 rounded-sm font-black uppercase tracking-[0.4em] text-xs hover:bg-black transition-all duration-500 shadow-xl active:scale-95">
+                            Confirm Availability
+                        </button>
+                    </form>
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-red-600/10 rounded-md -z-10"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="#" 
+   id="back-to-top"
+   class="fixed bottom-8 right-8 z-[150] w-16 h-16 bg-red-600 text-white flex items-center justify-center shadow-2xl hover:bg-green-800 transition-all duration-700 group active:scale-90 border-2 border-white/10 opacity-0 invisible"
+   style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;"
+   aria-label="Scroll to top">
+    <svg class="w-6 h-6 transform transition-transform group-hover:-translate-y-2" 
+         fill="none" 
+         stroke="currentColor" 
+         viewBox="0 0 24 24">
+        <path stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="3" 
+              d="M5 15l7-7 7 7">
+        </path>
+    </svg>
+</a>
+
+
+    <footer class="py-12 text-center text-gray-400 text-[10px] uppercase tracking-widest font-bold">
+        © 2026 Borneo Home Stay | Vilpatti, Kodaikanal
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

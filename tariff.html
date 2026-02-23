@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff & Rooms | Borneo Home Stay Kodaikanal</title>
+    <link rel="icon" type="image/png" href="assets/favicon.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .tariff-header {
+            background: linear-gradient(rgba(3, 45, 27, 0.85), rgba(3, 45, 27, 0.85)), url('https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="fixed top-0 left-0 w-full z-[100] flex items-center justify-between px-6 md:px-16 py-0 text-white transition-all duration-300 bg-transparent">
+        
+        <div class="shrink-0">
+            <div class="w-40 h-40 md:w-64 md:h-64 flex items-center justify-center -my-6 md:-my-10">
+                <a href="/">
+                    <img src="assets/logo-bg.png" 
+                        alt="Borneo Homestay Logo" 
+                        class="w-full h-full object-contain drop-shadow-2xl hover:scale-110 transition-transform duration-500 filter brightness-110">
+                </a>
+            </div>
+        </div>
+
+<ul class="hidden lg:flex items-center gap-4 text-[13px] font-[1000] font-black uppercase tracking-[0.3em]">
+    <li>
+        <a href="index.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="index.html#about" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            About Us
+        </a>
+    </li>
+    <li>
+        <a href="tariff.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Tariff
+        </a>
+    </li>
+    <li>
+        <a href="gallery.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Gallery
+        </a>
+    </li>
+    <li>
+        <a href="contact.html" class="bg-white/10 backdrop-blur-md px-6 py-4 rounded-md text-red-600 border border-white/20 hover:bg-red-600 hover:text-white transition-all duration-400 filter drop-shadow-lg block">
+            Contact
+        </a>
+    </li>
+</ul>
+
+        <div class="flex items-center gap-4">
+        <a href="https://www.goibibo.com/hotels/borneo-kodaikanal-hotel-in-kodaikanal-2585063791204530941/" class="hidden sm:block bg-red-600 text-white border-2 border-red-600 px-8 py-3 rounded-md hover:bg-white hover:text-red-600 hover:border-white transition-all duration-300 text-[11px] font-[1000] tracking-[0.2em] uppercase shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95 text-center" target="_blank">
+            Book Now
+        </a>
+
+            <button id="menu-toggle" class="lg:hidden p-2 focus:outline-none drop-shadow-md">
+                <svg id="menu-icon" class="w-8 h-8 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-green-950 translate-x-full transition-transform duration-500 ease-in-out lg:hidden">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-end p-8">
+                <button id="menu-close" class="text-white">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <ul class="flex flex-col items-center gap-8 text-green-500 text-xl font-bold uppercase tracking-[0.3em] mt-10">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="index.html#about" class="mobile-link">About Us</a></li>
+                <li><a href="tariff.html" class="mobile-link">Tariff</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+                <li class="mt-4">
+                    <a href="https://www.goibibo.com/hotels/borneo-kodaikanal-hotel-in-kodaikanal-2585063791204530941/" class="bg-white text-green-900 px-10 py-4 rounded-full font-black tracking-widest uppercase shadow-xl">
+                        Book Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+        <section class="mt-24 md:mt-32 py-12 bg-green-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-[10px] uppercase tracking-[0.2em] font-bold opacity-80">
+                    <span class="flex items-center gap-2">Hot Water 24/7</span>
+                    <span class="flex items-center gap-2">Smart TV</span>
+                    <span class="flex items-center gap-2">In-House Restaurant</span>
+                    <span class="flex items-center gap-2">EV Charging</span>
+                    <span class="flex items-center gap-2">Latex Mattresses</span>
+                </div>
+            </div>
+        </section>
+
+<section class="mt-32 md:mt-48 py-24 px-4 md:px-20 max-w-7xl mx-auto space-y-32">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-16 border-b border-red-600/10">
+        <div class="grid grid-cols-2 gap-4 relative">
+            <div class="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-red-600 opacity-30"></div>
+            <img src="assets/rooms/room1.JPG" class="rounded-3xl h-64 w-full object-cover shadow-lg" alt="Triple Room Main">
+            <img src="assets/rooms/room2.JPG" class="rounded-3xl h-64 w-full object-cover shadow-lg mt-8 border-4 border-white" alt="Triple Room View">
+        </div>
+        <div class="space-y-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-3xl font-black text-gray-900 uppercase">Triple Room</h2>
+                    <p class="text-green-700 font-bold mt-1 uppercase tracking-widest text-xs">Room No: 29</p>
+                </div>
+                <span class="text-3xl font-black text-gray-900">₹7,000</span>
+            </div>
+            <p class="text-gray-600 leading-relaxed font-light">Triple bedroom featuring a spacious living room and two balconies.</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-gray-500 uppercase tracking-widest">
+                <span class="bg-gray-100 px-4 py-2 rounded-md border border-gray-200">Occupancy: 6</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse pb-16 border-b border-green-500/10">
+        <div class="space-y-6 lg:order-2">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-3xl font-black text-gray-900 uppercase">Superior & Double Bed</h2>
+                    <p class="text-green-700 font-bold mt-1 uppercase tracking-widest text-xs">Rooms: 12, 18, 19, 23</p>
+                </div>
+                <span class="text-3xl font-black text-gray-900">₹5,000</span>
+            </div>
+            <p class="text-gray-600 leading-relaxed font-light">Choose Room 12 for a King Two Bedroom with Balcony, or Rooms 18, 19, & 23 for two bedrooms, two bathrooms, and a living area.</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-gray-500 uppercase tracking-widest">
+                <span class="bg-gray-100 px-4 py-2 rounded-md border border-gray-200">Occupancy: 4</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 lg:order-1 relative">
+            <div class="absolute -bottom-4 -right-4 w-12 h-12 border-b-2 border-r-2 border-green-500 opacity-30"></div>
+            <img src="assets/rooms/room1.JPG" class="rounded-3xl h-64 w-full object-cover shadow-lg mt-8 border-4 border-white" alt="Superior Room">
+            <img src="assets/rooms/room2.JPG" class="rounded-3xl h-64 w-full object-cover shadow-lg" alt="Double Bed Room">
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+            <div class="relative h-72 overflow-hidden rounded-3xl shadow-lg">
+                <img src="assets/rooms/room1.JPG" class="w-full h-full object-cover" alt="Honeymoon Suite">
+                <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 font-black text-[10px] tracking-widest uppercase">Room 11</div>
+            </div>
+            <div class="flex justify-between items-center border-b pb-4">
+                <h3 class="text-2xl font-black uppercase">Honeymoon Suit</h3>
+                <span class="text-2xl font-black text-gray-900">₹5,000</span>
+            </div>
+            <p class="text-sm text-gray-500 italic">King Bed with leisure sofa, Bathtub, & Balcony. Occupancy: 2.</p>
+        </div>
+
+        <div class="space-y-6">
+            <div class="relative h-72 overflow-hidden rounded-3xl shadow-lg">
+                <img src="assets/rooms/room1.JPG" class="w-full h-full object-cover" alt="Business Class">
+                <div class="absolute top-4 right-4 bg-green-600 text-white px-4 py-1 font-black text-[10px] tracking-widest uppercase">Room 27</div>
+            </div>
+            <div class="flex justify-between items-center border-b pb-4">
+                <h3 class="text-2xl font-black uppercase">Business Class Suite</h3>
+                <span class="text-2xl font-black text-gray-900">₹3,500</span>
+            </div>
+            <p class="text-sm text-gray-500 italic">King Bed with Leisure sofa & Sitout. Occupancy: 2.</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="space-y-4">
+            <img src="assets/rooms/room1.JPG" class="rounded-xl h-48 w-full object-cover shadow-md" alt="Royal Room">
+            <div class="p-6 bg-gray-50 border-l-4 border-red-600">
+                <h4 class="font-black uppercase text-sm">Royal Room (16 & 17)</h4>
+                <p class="text-[11px] text-gray-400 uppercase tracking-widest mt-1">₹3,000 - ₹3,500</p>
+                <p class="text-xs text-gray-500 mt-2 font-light">Ease Access from Car Parking.</p>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <img src="assets/rooms/room1.JPG" class="rounded-xl h-48 w-full object-cover shadow-md" alt="Deluxe Room">
+            <div class="p-6 bg-gray-50 border-l-4 border-green-600">
+                <h4 class="font-black uppercase text-sm">Superior & Deluxe Sitout</h4>
+                <p class="text-[11px] text-gray-400 uppercase tracking-widest mt-1">₹2,000 - ₹2,500</p>
+                <p class="text-xs text-gray-500 mt-2 font-light">Rooms 20, 21, 24, 25 with Sitout & Living Room.</p>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <img src="assets/rooms/room1.JPG" class="rounded-xl h-48 w-full object-cover shadow-md" alt="Pent Room">
+            <div class="p-6 bg-gray-50 border-l-4 border-red-600">
+                <h4 class="font-black uppercase text-sm">Pent / Panoramic Room</h4>
+                <p class="text-[11px] text-gray-400 uppercase tracking-widest mt-1">₹2,000</p>
+                <p class="text-xs text-gray-500 mt-2 font-light">Glass Nature Room with Panoramic View.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-gray-900 text-white px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div class="space-y-8">
+            <h3 class="text-green-400 font-black uppercase tracking-[0.3em] text-xs">Stay Notes</h3>
+            <ul class="space-y-4">
+                <li class="flex justify-between border-b border-white/10 pb-2">
+                    <span class="opacity-60 text-sm">Breakfast</span>
+                    <span class="font-bold text-sm">Complimentary</span>
+                </li>
+                <li class="flex justify-between border-b border-white/10 pb-2">
+                    <span class="opacity-60 text-sm">Check-in</span>
+                    <span class="font-bold text-sm">12:00 PM</span>
+                </li>
+                <li class="flex justify-between border-b border-white/10 pb-2">
+                    <span class="opacity-60 text-sm">Check-out</span>
+                    <span class="font-bold text-sm">10:00 AM</span>
+                </li>
+                <li class="flex justify-between border-b border-white/10 pb-2">
+                    <span class="opacity-60 text-sm">Extra Person</span>
+                    <span class="font-bold text-sm">₹500</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="lg:col-span-2 space-y-8">
+            <h3 class="text-red-600 font-black uppercase tracking-[0.3em] text-xs">Standard Amenities</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-8">
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-green-500"></div> 24Hr Hot Water
+                </div>
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-red-600"></div> Smart TV + Cable
+                </div>
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-green-500"></div> In-House Restaurant
+                </div>
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-red-600"></div> Car EV Charging
+                </div>
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-green-500"></div> Latex Mattresses
+                </div>
+                <div class="flex items-center gap-3 text-xs opacity-80 font-bold uppercase tracking-widest">
+                    <div class="w-1.5 h-1.5 bg-red-600"></div> Kettle & Toiletries
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="py-12 text-center text-gray-400 text-[10px] uppercase tracking-widest font-bold">
+        © 2026 Borneo Home Stay | Vilpatti, Kodaikanal
+    </footer>
+
+    <!--scroll to top button-->
+        <a href="#" 
+        id="back-to-top"
+        class="fixed bottom-8 right-8 z-[150] w-16 h-16 bg-red-600 text-white flex items-center justify-center shadow-2xl hover:bg-green-800 transition-all duration-700 group active:scale-90 border-2 border-white/10 opacity-0 invisible"
+        style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;"
+        aria-label="Scroll to top">
+            <svg class="w-6 h-6 transform transition-transform group-hover:-translate-y-2" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="3" 
+                    d="M5 15l7-7 7 7">
+                </path>
+            </svg>
+        </a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
