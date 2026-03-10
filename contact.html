@@ -129,36 +129,85 @@
 
             <div class="relative">
                 <div class="bg-white p-10 md:p-16 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] rounded-md border border-gray-100 relative z-10">
-                    <form action="#" class="space-y-8">
-                        <div class="space-y-2">
-                            <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Guest Name</label>
-                            <input type="text" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="Full Name">
-                        </div>
+                <form 
+                action="https://api.web3forms.com/submit" 
+                method="POST"
+                class="space-y-8"
+                >
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Mobile Number</label>
-                                <input type="tel" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="+91">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Room Type</label>
-                                <select class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none appearance-none transition-all font-bold text-gray-800">
-                                    <option>Honeymoon Suite (₹5,000)</option>
-                                    <option>Triple Room - 6 Pax (₹7,000)</option>
-                                    <option>Deluxe Room (₹2,000)</option>
-                                </select>
-                            </div>
-                        </div>
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="82ddfa77-cc30-4b61-8cb5-2e5a3ede8950">
 
-                        <div class="space-y-2">
-                            <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">Requirements</label>
-                            <textarea rows="4" class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" placeholder="Number of guests, special requests..."></textarea>
-                        </div>
+                <!-- Optional subject -->
+                <input type="hidden" name="subject" value="Room Booking Enquiry">
 
-                        <button type="submit" class="w-full bg-red-600 text-white py-6 rounded-sm font-black uppercase tracking-[0.4em] text-xs hover:bg-black transition-all duration-500 shadow-xl active:scale-95">
-                            Confirm Availability
-                        </button>
-                    </form>
+                <div class="space-y-2">
+                    <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">
+                    Guest Name
+                    </label>
+                    <input 
+                    type="text" 
+                    name="name"
+                    class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" 
+                    placeholder="Full Name"
+                    required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div class="space-y-2">
+                    <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">
+                        Mobile Number
+                    </label>
+                    <input 
+                        type="tel" 
+                        name="mobile"
+                        class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" 
+                        placeholder="+91"
+                        required>
+                    </div>
+
+                    <div class="space-y-2">
+                    <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">
+                        Room Type
+                    </label>
+                    <select 
+                        name="room_type"
+                        class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none appearance-none transition-all font-bold text-gray-800">
+                        <option value="Triple Room - 6 Pax (₹7,000)">Triple Room - 6 Pax (₹7,000)</option>
+                        <option value="Superior Room-BAL - 4 Pax (₹5,000)">Superior Room-BAL - 4 Pax (₹5,000)</option>
+                        <option value="Double Bed Room - 4 Pax (₹5,000)">Double Bed Room - 4 Pax (₹5,000)</option>
+                        <option value="Honeymoon Suit - 2 Pax (₹5,000)">Honeymoon Suit - 2 Pax (₹5,000)</option>
+                        <option value="Superior Room-SITOUT - 2 Pax (₹2,500)">Superior Room-SITOUT - 2 Pax (₹2,500)</option>
+                        <option value="Deluxe Room- BAL - 2 Pax (₹2,500)">Deluxe Room- BAL - 2 Pax (₹2,500)</option>
+                        <option value="Royal Room with Living - 2 Pax (₹3,500)">Royal Room with Living - 2 Pax (₹3,500)</option>
+                        <option value="Royal Room - 2 Pax (₹3,000)">Royal Room - 2 Pax (₹3,000)</option>
+                        <option value="Business Class Suite Room - 2 Pax (₹3,500)">Business Class Suite Room - 2 Pax (₹3,500)</option>
+                        <option value="Deluxe Room- SITOUT - 2 Pax (₹2,000)">Deluxe Room- SITOUT - 2 Pax (₹2,000)</option>
+                        <option value="Pent / Panoramic Glass Room - 2 Pax (₹2,000)">Pent / Panoramic Glass Room - 2 Pax (₹2,000)</option>
+                    </select>
+                    </div>
+
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-[10px] uppercase tracking-[0.3em] font-black text-gray-400">
+                    Requirements
+                    </label>
+                    <textarea 
+                    name="requirements"
+                    rows="4"
+                    class="w-full bg-gray-50 border-none p-5 rounded-sm focus:ring-2 focus:ring-red-600 outline-none transition-all font-bold text-gray-800" 
+                    placeholder="Number of guests, special requests..."></textarea>
+                </div>
+
+                <button 
+                    type="submit"
+                    class="w-full bg-red-600 text-white py-6 rounded-sm font-black uppercase tracking-[0.4em] text-xs hover:bg-black transition-all duration-500 shadow-xl active:scale-95">
+                    Confirm Availability
+                </button>
+
+                </form>
                 </div>
                 <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-red-600/10 rounded-md -z-10"></div>
             </div>
